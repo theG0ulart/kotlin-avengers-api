@@ -1,4 +1,4 @@
-# Usando uma imagem do Maven com JDK
+# Usando uma imagem do Maven com OpenJDK
 FROM maven:3.8.6-openjdk-17-slim AS build
 
 # Define o diretório de trabalho no contêiner
