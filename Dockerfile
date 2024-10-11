@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copia o JAR da aplicação para o contêiner
-COPY build/libs/avengers.jar app.jar
+COPY target/avengers.jar app.jar
 
 # Exponha a porta em que sua aplicação será executada
 EXPOSE 8080
