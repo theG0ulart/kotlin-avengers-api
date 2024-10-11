@@ -20,7 +20,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copia o JAR gerado na fase de build para a fase de execução
-COPY --from=build /app/target/avengers.jar app.jar
+COPY --from=build /app/target/avengers-*.jar app.jar
 
 # Exponha a porta em que sua aplicação será executada
 EXPOSE 8080
